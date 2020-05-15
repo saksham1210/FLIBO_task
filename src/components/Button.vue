@@ -1,11 +1,15 @@
 <template>
 	<div class="main">
-		<button
-		@click="increase"
-		>
-			Click to increse Count
-		</button>
-		<div v-show="count!==0 && count!==10"><h1>{{count}}</h1></div>
+		<div class="button">
+			<button
+			@click="increase"
+			>
+				<h1>Click to increse Count</h1>
+			</button>
+		</div>
+		<div v-show="count!==0 && count!==10">
+			<h1>{{count}}</h1>
+		</div>
 	</div>
 </template>
 
@@ -30,15 +34,14 @@
 
 <style>
 	.main{
-		height: 100vh;
-		width:100vw;
-		vertical-align: center;
 	}
 	button{
-		vertical-align: center;
 		background-color:red;
 		width:200px;
 		height:200px;
 		border-radius: 100px;
+	}
+	.button{
+		width:100%;
 	}
 </style>
