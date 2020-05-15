@@ -5,7 +5,7 @@
 		>
 			Click to increse Count
 		</button>
-		<div v-if="count!==0 && count!==10"><h1>{{count}}</h1></div>
+		<div v-show="count!==0 && count!==10"><h1>{{count}}</h1></div>
 	</div>
 </template>
 
