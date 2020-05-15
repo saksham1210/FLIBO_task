@@ -1,12 +1,10 @@
 <template>
-	<div class="main">
-		<div class="button">
-			<button
-			@click="increase"
-			>
-				<h1>Click to increse Count</h1>
-			</button>
-		</div>
+	<div>
+		<button
+		@click="increase"
+		>
+			<h1>Click to increse Count</h1>
+		</button>
 		<div v-show="count!==0 && count!==10">
 			<h1>{{count}}</h1>
 		</div>
@@ -33,15 +31,10 @@
 </script>
 
 <style>
-	.main{
-	}
 	button{
 		background-color:red;
 		width:200px;
 		height:200px;
 		border-radius: 100px;
-	}
-	.button{
-		width:100%;
 	}
 </style>
